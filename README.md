@@ -33,12 +33,12 @@ The LongestCommonSubstring is a microservice responsible for identifying the lon
 
 ## Installing
 
-The service written in Java leveraging the Spring Boot framework. Developers can use any IDE, you can run 
+The service written in Java leveraging the Spring Boot framework. Developers can use any IDE to view and/or modify the code. 
 
 ```
-mvn eclipse:eclipse
+mvn clean install spring-boot:run
 ```
-in the project folder to provision the project for Eclispe.
+in the project folder to build and deploy the code with built-in tomcat.
 
 ## Building
 
@@ -78,7 +78,7 @@ This can now be run on any machine with a JVM installed.
 java -jar LongestCommonSubstring-<version>.jar
 ```
 
-
+Or, can be deployed to any other application server like Wildfly, Websphere, Weblogic.
 
 ### Application Properties Reference
 
