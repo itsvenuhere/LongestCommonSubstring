@@ -1,0 +1,18 @@
+.main {
+	display: block;
+	margin: $content-margin-vertical auto;
+	min-height: calc(100vh - 212px);
+	max-width: 40rem;
+	padding: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.main {
+		min-height: calc(100vh - 262px);
+		padding: 0 $content-gutter-at-medium;
+	}
+}

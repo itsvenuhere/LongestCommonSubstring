@@ -1,0 +1,13 @@
+@mixin font-face($family, $style, $weight, $srcType, $path) {
+	@font-face {
+		font-family: $family;
+		font-style: $style;
+		font-weight: $weight;
+		@if($srcType == woff ) {
+			src: url(quote($path + '.woff')) format('woff');
+		}
+		@if($srcType == eot) {
+			src: url(quote($path + '.eot'));
+		}
+	}
+}

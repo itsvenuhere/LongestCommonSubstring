@@ -1,0 +1,63 @@
+input[type='button'],
+button {
+	background: $button-color;
+	border: 1px solid $button-color;
+	border-radius: $border-radius;
+	color: $button-text-color;
+	font-size: $button-font-size;
+	font-weight: $font-weight-bold;
+	height: $button-height;
+	transition: all .2s ease-in-out 0s;
+}
+
+input[type='button']:hover,
+button:hover {
+	background: $button-hover-color;
+}
+
+input[type='submit'],
+input[type='button'].emphasis,
+button.emphasis {
+	background: $button-emphasis-color;
+	border: 1px solid $button-emphasis-color;
+	border-radius: $border-radius;
+	color: $button-text-color-emphasis;
+	font-size: $button-font-size;
+	font-weight: $font-weight-bold;
+	height: $button-height;
+	transition: all .2s ease-in-out 0s;
+}
+
+input[type='submit']:hover,
+input[type='button'].emphasis:hover,
+button.emphasis:hover {
+	background: $button-hover-emphasis-color;
+}
+
+.button-wrapper {
+	font-size: 0;
+	margin: $button-wrapper-top-margin 0 0;
+
+	input {
+		display: inline-block;
+		margin: 0 0 0 $button-spacing / 2;
+		width: calc(50% - #{$button-spacing / 2});
+	}
+	
+	input:first-child {
+		margin: 0 $button-spacing / 2 0 0;
+	}
+	
+	input:only-child,
+	button:only-child,
+	input.only-child {
+		margin: 0;
+		width: 100%;
+	}
+	
+	+ .link-wrapper,
+	+ p,
+	+ .link-wrapper + p {
+		margin-top: $button-wrapper-post-text-margin-top;
+	}
+}

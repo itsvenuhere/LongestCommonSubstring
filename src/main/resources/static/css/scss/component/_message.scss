@@ -1,0 +1,54 @@
+.header-error {
+	background: $color-peach;
+	display: none;
+	text-align: center;
+	
+	&__text {
+		background: url(../img/warning.png) no-repeat left center;
+		background-size: 25px 25px;
+		display: inline-block;
+		font-size: $error-font-size;
+		padding: $header-error-text-padding-vertical 0 $header-error-text-padding-vertical $header-error-text-padding-left;
+	}
+}
+
+.main-message {
+	background: url(../img/gear.png) no-repeat center top;
+	background-size: 40px 40px;
+	display: inline-block;
+	padding: $content-margin-vertical 0 $main-message-margin-bottom;
+	
+	&.error {
+		background-image: url(../img/warning.png);
+	}
+	
+	&.success {
+		background-image: url(../img/success.png);
+	}
+	
+	&__heading {
+		color: $main-error-text-color;
+		font-size: $message-heading-font-size;
+		margin-top: 0;
+	}
+	
+	&__subheading {
+		color: $main-error-text-color;
+		font-size: $message-subheading-font-size;
+		margin: $main-message-subheading-margin-top 0 $main-message-subheading-margin-bottom;
+	}
+}
+
+.field-error {
+	background: $color-peach url(../img/warning.png) no-repeat .5rem center;
+	background-size: 25px 25px;
+	font-size: $error-font-size;
+	display: none;
+	padding: $field-error-text-padding-vertical 0 $field-error-text-padding-vertical $field-error-text-padding-left; 
+}
+
+@media only screen and (max-width: 768px) {
+	.header-error__text {
+		margin: 0 $content-gutter-at-medium;
+	}
+}

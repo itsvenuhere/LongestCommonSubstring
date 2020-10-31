@@ -1,0 +1,66 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	color: $text-color;
+	font-family: $font-face-primary;
+	font-size: $default-font-size;
+	font-style: normal;
+	font-weight: $font-weight-normal;
+	line-height: 1.25;
+	margin: 0;
+	min-width: 320px;
+	padding: 0;
+}
+
+* {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	padding: 0;
+}
+
+header,
+footer,
+main {
+	display: block;
+}
+
+h1 {
+	color: $main-error-text-color;
+	font-size: $h1-font-size;
+	margin-bottom: $h1-margin-bottom;
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+	color: $link-color;
+	font-size: inherit;
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style-position: inside;
+	list-style-type: disc;
+	padding-left: $list-indent;
+}
+
+p {
+	margin-top: $paragraph-margin-top;
+}

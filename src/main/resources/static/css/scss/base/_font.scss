@@ -1,0 +1,25 @@
+@import '../base/mixin/font-face';
+
+$font-size-small: 1.5rem;
+$font-size-medium: 1.7rem;
+$font-size-large: 2rem;
+$font-size-xlarge: 2.5rem;
+$font-size-jumbo: 4rem;
+
+$font-weight-thin: 100;
+$font-weight-normal: 300;
+$font-weight-bold: 500;
+
+$button-font-size: $font-size-medium;
+$default-font-size: $font-size-medium;
+$dialog-button-font-size: $font-size-small;
+$dialog-heading-font-size: $font-size-medium;
+$dialog-text-font-size: $font-size-small;
+$error-font-size: $font-size-small;
+$field-hint-font-size: $font-size-small;
+$footer-font-size: $font-size-small;
+$h1-font-size: $font-size-xlarge;
+$header-text-font-size: $font-size-jumbo;
+$header-text-font-size-at-medium: $font-size-large;
+$message-heading-font-size: $font-size-xlarge;
+$message-subheading-font-size: $font-size-large;

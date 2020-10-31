@@ -1,0 +1,79 @@
+label,
+legend {
+	display: block;
+	font-weight: $font-weight-bold;
+	margin-bottom: $label-margin-bottom;
+	padding-left: $field-label-indent;
+}
+
+input[type='checkbox'] + label,
+input[type='radio'] + label {
+	display: inline-block;
+	font-weight: $font-weight-normal;
+	margin: 0 0 0 $radio-label-spacing;
+}
+
+.field {
+	margin: $field-margin-vertical 0;
+}
+
+fieldset {
+	border: 0;
+}
+
+.radio-fieldset .field {
+	margin: $radio-margin-vertical 0;
+}
+
+input[type='text'],
+input[type='password'] {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+input[type='text'],
+input[type='password'],
+select {
+	border: 1px solid $field-border-color;
+	border-radius: $border-radius;
+	display: block;
+	height: 4rem;
+	padding: 0 $field-padding-horizontal;
+	width: 100%;
+}
+input[type='text']:read-only {
+	border: 0;
+}
+select {
+	padding-right: 0;
+}
+input {
+	&[type='checkbox'],
+	&[type='radio'] {
+		display: inline-block;
+		height: 1.5rem;
+		vertical-align: middle;
+		width: 1.5rem;
+	}
+}
+
+.field-hint {
+	font-size: $field-hint-font-size;
+	padding-left: $field-label-indent;
+	
+	p {
+		margin: $field-hint-margin-vertical 0;
+	}
+}
+
+.loading-overlay {
+	background: rgba(255,255,255,0.5) url(../img/loading-spinner.gif) no-repeat center center;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1050;
+}

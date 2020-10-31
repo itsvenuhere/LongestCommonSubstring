@@ -1,0 +1,35 @@
+footer {
+	font-size: 0;
+	margin: 0 0 $footer-margin-bottom;
+	text-align: center;
+
+	li {
+		display: inline-block;
+		border-left: 1px solid $footer-link-border-color;
+		font-size: $footer-font-size;
+		padding: 0 $footer-link-padding-horizontal;
+	}
+
+	li:first-child {
+		border: 0;
+		padding-left: 0;
+	}
+
+	li:last-child {
+		padding-right: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	footer li {
+		border: 0;
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}

@@ -1,0 +1,50 @@
+header {
+	background: $header-color;
+	padding: $header-padding-vertical $header-padding-horizontal;
+}
+
+.header__logo {
+	display: inline-block;
+	width: 18.2rem;
+}
+
+.header__text {
+	border-left: 1px solid $header-text-color;
+	color: $header-text-color;
+	display: inline-block;
+	font-size: $header-text-font-size;
+	font-weight: $font-weight-thin;
+	margin-left: $header-text-spacing;
+	padding-left: $header-text-spacing;
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		padding: $header-padding-top-at-medium $header-padding-horizontal $header-padding-bottom-at-medium;
+	}
+
+	.header__logo,
+	.header__text {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.header__logo {
+		width: 13rem;
+	}
+
+	.header__text {
+		border-left: 0;
+		border-top: 1px solid $header-text-color;
+		font-size: $header-text-font-size-at-medium;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.header__logo {
+		width: 11.5rem;
+	}
+}

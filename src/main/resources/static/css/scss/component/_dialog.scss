@@ -1,0 +1,67 @@
+.ui-dialog {
+	background: $dialog-color;
+	border: 1px solid $dialog-border-color;
+	border-radius: $border-radius;
+	
+	.ui-dialog-titlebar {
+		background: $dialog-heading-background-color;
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
+		color: $dialog-heading-text-color;
+		font-size: $dialog-heading-font-size;
+		margin: -.2em -.2em 0;
+		
+		.ui-dialog-titlebar-close {
+			visibility: hidden;
+		}
+	}
+	
+	.ui-dialog-content {
+		font-size: $dialog-text-font-size;
+		padding: $dialog-padding;
+	}
+	
+	.ui-dialog-buttonpane {
+		margin: $dialog-button-margin-top 0 $dialog-button-margin-bottom;
+		padding: 0 $dialog-padding;
+		text-align: center;
+
+		.ui-dialog-buttonset {
+			float: none;
+		}
+
+		button.ui-button {
+			background: $button-color;
+			border: 1px solid $button-color;
+			border-radius: $border-radius;
+			color: $button-text-color;
+			font-size: $dialog-button-font-size;
+			font-weight: $font-weight-bold;
+			margin: 0;
+			padding: $dialog-button-padding-vertical $dialog-button-padding-horizontal;
+
+			+ .ui-button {
+				margin-left: $dialog-button-spacing;
+			}
+		}
+		
+		.ui-button:hover {
+			background: $button-hover-color;
+		}
+		
+		.ui-button.emphasis {
+			background: $button-emphasis-color;
+			border-color: $button-emphasis-color;
+			color: $button-text-color-emphasis;
+		}
+		
+		.ui-button.emphasis:hover {
+			background: $button-hover-emphasis-color;
+		}
+	}
+}
+
+.ui-widget-overlay {
+	background: $dialog-overlay-color;
+	opacity: .5;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Longest Common Substring</title>
+
+		<script src="js/app-include.js?v=7"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header__text">Longest Common Substring</div>
+		</header>
+		<div class="main">
+			<form action="javascript:submitValues();">
+				<div class="field">
+					<label for="vauesTxtArea">Please enter strings to find common longest substring:</label>
+				</div>
+
+				<div>
+					<textarea id="vauesTxtArea" name="values" rows="4" cols="50" tabindex="1" autofocus>
+  					</textarea>
+				</div>
+
+				<div class="button-wrapper">
+					<input type="submit" name="log-in" tabindex="2" value="Find Longest common substring" class="only-child">
+				</div>
+
+				<div id ="responseLbl" style="display: none">
+					<label >Common longest substring(s):</label>
+					<label id="respTxt"></label>
+				</div>
+
+				<div id ="errorLbl" style="display: none">
+					<label >Please fix below errors to find common longest substring</label>
+					<label id="errorTxt"></label>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<ul>
+				<li><a href="" target="_blank">Usage</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
