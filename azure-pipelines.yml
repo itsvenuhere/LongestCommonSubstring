@@ -1,0 +1,18 @@
+trigger:
+  branches:
+    include:
+    - feature
+
+stages:
+  - stage: cicd
+    jobs: 
+      - job:build_job
+          pool: BuildPool
+          steps:
+            name: Build
+              mvn clean install
+          
+          
+        
+  
+  
