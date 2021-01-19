@@ -107,5 +107,3 @@ System
 
 
 ## Acknowledgments
-
-* Thanks to the Comcast Technology team!
